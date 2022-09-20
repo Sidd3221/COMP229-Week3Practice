@@ -3,23 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>From EJS</title>
+        <title><%=title%></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./content/app.css">
     </head>
     <body>
         <header>
-
+            <%- include('components/header.ejs'); %>
         </header>
-        
-        <main>
 
+        <main>
+            <%- include('content/home.ejs'); %>
         </main>
 
         <footer>
-
+            <%- include('components/footer.ejs'); %>
         </footer>
-        
+        <script src="./scripts/app.js"></script>
     </body>
 </html>
